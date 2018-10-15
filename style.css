@@ -1,3 +1,4 @@
+/* General Styles for Both Pages */
 html {
     position: relative;
     height: 100%;
@@ -36,9 +37,7 @@ nav {
     padding-top: 40px;
     padding-bottom: 60px;
     background-attachment: fixed;
-    
 }
-
 #bigcontainer {
     height: auto;
     padding-top: 10px;
@@ -52,23 +51,43 @@ nav {
 #bigcontainer h2 {
     margin: auto;
 }
-.card {
-    margin: auto;
+/*Projects on Profile Page */
+#projects {
+    margin-top: 75px;
 }
-.card:hover {
+.work:hover {
     cursor: pointer;
 }
-.card > img {
+.work img {
     max-height: 400px;
+    max-width: 400px;
 }
-.card-img-overlay { /* Makes the band go all the way across the top */
-    padding: 0;
+/* Modal Styles */
+#contactModalTitle {
+    font-family: 'Pacifico', cursive;
+    color: white;
 }
-.card-img-overlay .card-title {
-	background: rgba(0,0,0,.5);
-    color: #fff;
-    text-align: center;
+#contactModal .modal-header {
+    background-color: #36454f;
 }
+#contactModal .close {
+    color: white;
+    opacity: 1;
+    transition: 0.3s;
+}
+#contactModal .close:hover {
+    color: black;
+    opacity: .2;
+}
+#modalClose {
+    background-color: #36454f;
+    color: white;
+    transition: 0.3s;
+}
+#modalClose:hover {
+    color: black;
+}
+/* Footer Style */
 .footer {
     position: absolute;
     bottom: 0;
